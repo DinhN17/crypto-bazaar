@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.typekit.net/yck4dnq.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>My Wallet - Crypto Bazaar</title>
+</head>
+
+<body class="bg-white">
+    <header class="top-page flex items-center justify-between px-[15vw] py-[1vw]">
+        <a href="index.html"><img src="assets/images/crypto-bazaar-neon.png" alt="Crypto Bazaar Logo" class="logo-cb w-[8vw]" id="header-logo"></a> 
+        <nav>
+            <ul class="flex font-bold gap-[5vw] text-slate-400" id="nav-links">
+                <li>
+                    <a href="crypto.html">Crypto</a>
+                </li>
+                <li>
+                    <a href="nft.html">NFT's</a>
+                </li>
+                <li>
+                    <a href="wallet.html">My Wallet</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="pr-[1vw]">
+            <input class="p-[1vw] border-none hover:bg-slate-100 rounded" type="text" placeholder="Search..">
+        </div>
+    </header>
+        <hr>
+
+
+    <main class="container mx-auto px-[10vw] py-[2vw]">
+
+        <section class="container"> 
+            <section class="wal-msg container flex">
+
+                <section class="container">
+                    <h1 class="text-2xl font-bold">Your Wallet</h1>
+                    <p>Welcome to your Crypto Bazaar wallet. You can view and track your assets here.</p>
+                </section>
+
+                <section class="container flex flex-col items-end">
+                    <h2 class="asset-sec font-bold">Your Total Assets:</h2>
+                    <p id="total-nfts"></p>
+                    <p id="total-coins"></p>
+                </section>
+            </section>
+        </section>
+
+        <hr class="mt-[1vw] mb-[2vw]">
+
+        <section class="container" id="wallet">
+
+            <section class="container">
+                <h2 class="text-2xl font-bold">My Crypto</h2>
+                <hr class="mt-[1vw] mb-[1vw]">
+                <section class="container flex flex-col">
+                    <section class="container flex">
+                        <h3>Your Crypto wallet is empty - <a href="crypto.html" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Explore Cryptocurrency</a> to find currency to add to your wallet. </h3>
+                    </section>
+                </section>
+            </section>
+
+
+            <section class="container mt-[2vw]">
+                <h2 class="text-2xl font-bold">My NFT's</h2>
+                <hr class="mt-[1vw] mb-[1vw]">
+                <section class="container flex flex-col">
+                    <section class="container flex">
+                        <h3>Your NFT wallet is empty - <a href="nft.html" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Explore NFT's</a> to find NFT's to add to your wallet. </h3>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/wallet.js"></script>
+</body>
+
+</html>
